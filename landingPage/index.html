@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<!--
+    Ejercicio: Práctica CSS Libre
+    Grupo: Casas Rurales
+    Alumnos: Laia Fuster, Víctor Gimeno, Germán Mendoza, Óscar Zhu
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casas Rurales</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYJDXMREL1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QYJDXMREL1');
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="../imgs/logoRuralCasa.jpeg" alt="logoRuralCasa"></a>
+        </div>
+        <div class="searchBar input-group" id="navbar">
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" id="ubicacion" name="ubicacion">
+                <option value="Alicante">Alicante</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Castellon">Castellon</option>
+            </select>
+            <label for="ubicacion">Ubicacion</label>
+            <span></span>
+            <input type="date" name="date" id="fechaCheckIn">
+            <input type="date" name="dateExit" id="fechaCheckOut">
+            <label for="dateExit">Fechas</label>
+            <span></span>
+            <select name="hosts" id="huespedes">
+            </select>
+            <label for="hosts">Huespedes</label>
+            <input type="submit" id="send">
+                <div class="searchBar__icon">
+                    <img src="../imgs/lupa.svg" alt="Search Icon">
+                </div>
+            </input>
+            <!-- Cambiar el input -->
+        </div>
+        <div id="navbarError">
+
+        </div>
+        <div class="nav">
+            <p class="header__nav__button-host">Pon tu casa en RuralCasa</p>
+            <button class="header__nav__button-languaje">
+                <img src="../imgs/mundo.svg" alt="mundo">
+                <img src="../imgs/flechaAbajo.svg" alt="flechaAbajo">
+            </button>
+            <button class="header__nav__button-account">
+                <img src="../imgs/hamburguesa.svg" alt="hamburguesa">
+                <img src="../imgs/cuenta.svg" alt="cuenta">
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <article class="main">
+            <p>300+ estancias · 1 Sep - 3 Sep · 1 huésped</p>
+            <h1>Estancias en la zona seleccionada del mapa</h1>
+            <section class="main__filters">
+                <button>Cancelaciones</button>
+                <button>Tipo de Apartamento</button>
+                <button>Precio</button>
+                <button>Reserva inmediata</button>
+                <button>Más filtros</button>
+            </section>
+            <section class="caveat">
+                <img src="../imgs/calendario.gif" alt="calendario">
+                <p>
+                    <b>El 58% de las casas en Alicante ya están reservadas para tus fechas.</b>
+                    Date prisa en reservar.
+                </p>
+            </section>
+            <section class="houses">
+                <div class="houses__item Alicante" >
+                    <div class="houses__image">
+                        <button>
+                            <img src="../imgs/flechaIzquierda.svg" alt="flechaIzquierda">
+                        </button>
+                        <button>
+                            <img src="../imgs/flechaDerecha.svg" alt="flechaDerecha">
+                        </button>
+                        <img src="../imgs/casas/montania.jpeg" alt="">
+                    </div>
+                    <div class="houses__content">
+                        <div class="houses__title">
+                            <div class="houses__icon__text">
+                                <p class="specifications">Casa Lo Rat Penat con vistas a la montaña</p>
+                                <h2>Villa en El Parnaso, Alicante</h2>
+                            </div>
+                            <div class="houses__title__icon">
+                                <button>
+                                    <img src="../imgs/corazon.svg" alt="corazon">
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="houses__specifications">
+                            <p class="specifications">2 huéspedes · 1 habitación</p>
+                            <p class="specifications">Cocina · WiFi · Calefacción</p>
+                        </div>
+                        <div class="houses__details">
+                            <div class="houses__ratings">
+                                <img src="../imgs/estrella.png" alt="estrella">
+                                <span>5 <span>(14)</span></span>
+                            </div>
+                            <div class="houses__price">
+                                <div class="houses__price__night">25€<span> / noche</span>
+                                </div>
+                                <div class="houses__price__total">
+                                    <span>57€ total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses__item Alicante">
+                    <div class="houses__image">
+                        <button>
+                            <img src="../imgs/flechaIzquierda.svg" alt="flechaIzquierda">
+                        </button>
+                        <button>
+                            <img src="../imgs/flechaDerecha.svg" alt="flechaDerecha">
+                        </button>
+                        <img src="../imgs/casas/rocoas.jpeg" alt="">
+                    </div>
+                    <div class="houses__content">
+                        <div class="houses__title">
+                            <div class="houses__icon__text">
+                                <span class="specifications">Casa frente al castillo de Guadalest </span>
+                                <h2>Casa Entera en Guadalest, Alicante</h2>
+                            </div>
+                            <div class="houses__title__icon">
+                                <button>
+                                    <img src="../imgs/corazon.svg" alt="corazon">
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="houses__specifications">
+                            <span class="specifications">4 huéspedes · 2 habitaciones</span>
+                            <span class="specifications">Parking · WiFi · Calefacción</span>
+                        </div>
+                        <div class="houses__details">
+                            <div class="houses__ratings">
+                                <img src="../imgs/estrella.png" alt="estrella">
+                                <span>4.9 <span>(18)</span></span>
+                            </div>
+                            <div class="houses__price">
+                                <div class="houses__price__night">31€<span> / noche</span>
+                                </div>
+                                <div class="houses__price__total">
+                                    <span>71€ total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses__item">
+                    <div class="houses__image">
+                        <button>
+                            <img src="../imgs/flechaIzquierda.svg" alt="flechaIzquierda">
+                        </button>
+                        <button>
+                            <img src="../imgs/flechaDerecha.svg" alt="flechaDerecha">
+                        </button>
+                        <img src="../imgs/casas/nocturna.jpeg" alt="">
+                    </div>
+                    <div class="houses__content">
+                        <div class="houses__title">
+                            <div class="houses__icon__text">
+                                <span class="specifications">Chalet con vistas a la montaña</span>
+                                <h2>Villa especial en San Juan, Alicante</h2>
+                            </div>
+                            <div class="houses__title__icon">
+                                <button>
+                                    <img src="../imgs/corazon.svg" alt="corazon">
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                        <div class="houses__specifications">
+                            <span class="specifications">2 huéspedes · 1 habitación</span>
+                            <span class="specifications"> WiFi · Calefacción · Cocina</span>
+                        </div>
+                        <div class="houses__details">
+                            <div class="houses__ratings">
+                                <img src="../imgs/estrella.png" alt="estrella">
+                                <span>4.8 <span>(12)</span></span>
+                            </div>
+                            <div class="houses__price">
+                                <div class="houses__price__night">24€<span> / noche</span>
+                                </div>
+                                <div class="houses__price__total">
+                                    <span>54€ total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses__item">
+                    <div class="houses__image">
+                        <button>
+                            <img src="../imgs/flechaIzquierda.svg" alt="flechaIzquierda">
+                        </button>
+                        <button>
+                            <img src="../imgs/flechaDerecha.svg" alt="flechaDerecha">
+                        </button>
+                        <img src="../imgs/casas/rustica.jpeg" alt="">
+                    </div>
+                    <div class="houses__content">
+                        <div class="houses__title">
+                            <div class="houses__icon__text">
+                                <span class="specifications">Casa Zaratustra en Penáguila</span>
+                                <h2>Casa Rural con encanto en Penáguila, Alicante</h2>
+                            </div>
+                            <div class="houses__title__icon">
+                                <button>
+                                    <img src="../imgs/corazon.svg" alt="corazon">
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                        <div class="houses__specifications">
+                            <span class="specifications">4 huéspedes · 2 habitaciones</span>
+                            <span class="specifications">Parking · Plancha · WiFi</span>
+                        </div>
+                        <div class="houses__details">
+                            <div class="houses__ratings">
+                                <img src="../imgs/estrella.png" alt="estrella">
+                                <span>5 <span>(7)</span></span>
+                            </div>
+                            <div class="houses__price">
+                                <div class="houses__price__night">31€<span> / noche</span>
+                                </div>
+                                <div class="houses__price__total">
+                                    <span>63€ total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses__item">
+                    <div class="houses__image">
+                        <button>
+                            <img src="../imgs/flechaIzquierda.svg" alt="flechaIzquierda">
+                        </button>
+                        <button>
+                            <img src="../imgs/flechaDerecha.svg" alt="flechaDerecha">
+                        </button>
+                        <img src="../imgs/casas/ventanal.jpeg" alt="">
+                    </div>
+                    <div class="houses__content">
+                        <div class="houses__title">
+                            <div class="houses__icon__text">
+                                <span class="specifications">Villa frondosa en Onil</span>
+                                <h2>Villa con vistas en Onil, Alicante</h2>
+                            </div>
+                            <div class="houses__title__icon">
+                                <button>
+                                    <img src="../imgs/corazon.svg" alt="corazon">
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+                        <div class="houses__specifications">
+                            <span class="specifications">4 huéspedes · 2 habitaciones</span>
+                            <span class="specifications">Calefacción · Parking · Plancha</span>
+                        </div>
+                        <div class="houses__details">
+                            <div class="houses__ratings">
+                                <img src="../imgs/estrella.png" alt="estrella">
+                                <span>4.8 <span>(21)</span></span>
+                            </div>
+                            <div class="houses__price">
+                                <div class="houses__price__night">29€<span> / noche</span>
+                                </div>
+                                <div class="houses__price__total">
+                                    <span>59€ total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="houses__nextpages">
+                    <div class="houses__nextpages__buttons">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>···</button>
+                        <button>15</button>
+                    </div>
+                    <div class="houses__nextpages__availableplaces">
+                        <span>1-200 de 300+ apartamentos para estar</span>
+                    </div>
+                    <div class="houses__nextpages__fees">
+                        <span>Puede haber cargos adicionales. Impuestos pueden ser añadidos con posterioridad.</span>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="map">
+            <section class="map__googleMap">
+                <div class="googleMapItself">
+                    <iframe class="googleMapCode"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40100.05245416056!2d-0.5016700433245312!3d38.35748679614076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante!5e0!3m2!1sen!2ses!4v1672173160806!5m2!1sen!2ses"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article class="mainFooter" id="mainFooter">
+            <section>
+                <h4>Sobre RuralCasa</h4>
+                <ul>
+                    <li><a href="#mainFooter">Cómo funciona</a></li>
+                    <li><a href="#mainFooter">Noticias</a></li>
+                    <li><a href="#mainFooter">RuralCasa Plus</a></li>
+                    <li><a href="#mainFooter">RuralCasa Luxe</a></li>
+                    <li><a href="#mainFooter">HotelTonight</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Asistencia</h4>
+                <ul>
+                    <li><a href="#mainFooter">Centro de Ayuda</a></li>
+                    <li><a href="#mainFooter">RuCover</a></li>
+                    <li><a href="#mainFooter">Accesibilidad para todos</a></li>
+                    <li><a href="#mainFooter">Opciones de cancelación</a></li>
+                    <li><a href="#mainFooter">Nuestra respuesta ante el COVID-19</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Comunidad</h4>
+                <ul>
+                    <li><a href="#mainFooter">RuralCasa.org para emergencias</a></li>
+                    <li><a href="#mainFooter">Lucha contra la discriminación</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>Cómo ser anfitrión</h4>
+                <ul>
+                    <li><a href="#mainFooter">Pon tu casa en RuralCasa</a></li>
+                    <li><a href="#mainFooter">RuCover para anfitriones</a></li>
+                    <li><a href="#mainFooter">Recursos para anfitriones</a></li>
+                    <li><a href="#mainFooter">Visita el foro de la comunidad</a></li>
+                    <li><a href="#mainFooter">Ser un anfitrión responsable</a></li>
+                </ul>
+            </section>
+            <section>
+                <h4>RuralCasa</h4>
+                <ul>
+                    <li><a href="#mainFooter">Descubre las nuevas funciones</a></li>
+                    <li><a href="#mainFooter">Carta de los fundadores</a></li>
+                    <li><a href="#mainFooter">Empleo</a></li>
+                    <li><a href="#mainFooter">Inversores</a></li>
+                    <li><a href="#mainFooter">Tarjetas regalo</a></li>
+                </ul>
+            </section>
+        </article>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

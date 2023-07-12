@@ -1,0 +1,519 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey-med: #ddd;
+    --grey-light: #f7f7f7;
+    --grey-text-light: #717171;
+    --grey-text-dark: #222;
+    --corporate: #445500;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey-text-light);
+}
+
+body {
+    background-color: white;
+    color: rgb(34, 34, 34);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+body>header>div>button:nth-child(1),
+body>header>div>button:nth-child(2),
+body>header>div>button:nth-child(3),
+body>header>div>button:nth-child(5) {
+    background: transparent;
+    height: 44px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+body>header>div>button:nth-child(3) {
+    padding: 0 8px 0 11px;
+}
+
+body>header>div>span {
+    width: 2px;
+    height: 24px;
+    background: var(--grey-med);
+}
+
+body>header>.nav>button:nth-child(3) {
+    border: 1px solid var(--grey-med);
+}
+
+button {
+    padding: 8px 16px;
+    outline: none;
+    background: transparent;
+    margin: 0;
+}
+
+footer {
+    background: var(--grey-light);
+    border-top: 1px solid var(--grey-med);
+    padding: 30px 0;
+}
+
+footer h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+footer .mainFooter {
+    max-width: 800px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+    font-weight: 100;
+    color: var(--grey-text-light);
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header {
+    height: 80px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgb(0, 0, 0, 0.08) 0px 1px 12px;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+}
+
+header:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+
+main {
+    position: relative;
+    padding-top: 80px;
+}
+
+main>article>section>button {
+    border: 1px solid #b0b0b0;
+    border-radius: 30px;
+    margin-right: 6px;
+}
+
+main>article>section>button:hover {
+    border-color: var(--grey-text-dark);
+}
+
+.caveat {
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 0.8vw;
+}
+
+.caveat>img {
+    margin-right: 15px;
+}
+
+.googleMapItself {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.googleMapCode {
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.header__nav__button-host {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border-radius: 22px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.header__nav__button-host:hover,
+.header__nav__button-languaje:hover {
+    background: var(--grey-light);
+    border-radius: 22px;
+}
+
+.header__nav__button-languaje>img:nth-child(1) {
+    width: 16px;
+    height: 16px;
+}
+
+.header__nav__button-languaje>img:nth-child(2) {
+    width: 9px;
+    height: 6px;
+    margin-left: 6px;
+}
+
+.header__nav__button-account {
+    border: 1px solid var(--grey-med);
+    height: 42px;
+    border-radius: 22px;
+    padding: 5px 5px 5px 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+.header__nav__button-account:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+}
+
+.header__nav__button-account>img:nth-child(1) {
+    height: 16px;
+    border: 1px;
+}
+
+.header__nav__button-account>img:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    margin-left: 12px;
+}
+
+.houses__image {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.houses__image button {
+    position: absolute;
+    top: 40%;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 0;
+    transition: 0.1s ease-in;
+}
+
+.houses__image button:nth-child(1) {
+    left: 10px;
+}
+
+.houses__image button:nth-child(2) {
+    right: 10px;
+}
+
+.houses__image button img {
+    width: 10px;
+    height: 10px;
+}
+
+.houses__image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.houses__content {
+    width: calc(100% - 300px);
+    /* La imagen tiene un tamaño de 300 píxeles
+    Así que movemos ese 100% hacia la izquierda 300 píxeles*/
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.houses__details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.houses__icon__text h2 {
+    font-size: 18px;
+    color: var(--grey-text-dark);
+    margin: 5px 0 15px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.houses__item {
+    border-top: 1px solid #ebebeb;
+    padding: 24px 0;
+    display: flex;
+}
+
+.houses__item:hover .houses__image button {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.houses__item:hover .houses__image button:hover {
+    opacity: 1 !important;
+}
+
+.houses__nextpages {
+    padding: 80px 0 20px 0;
+}
+
+.houses__nextpages__availableplaces {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 12px;
+    color: var(--grey-text-dark);
+}
+
+.houses__nextpages__buttons {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.houses__nextpages__buttons button {
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+}
+
+.houses__nextpages__buttons button:hover {
+    background-color: var(--corporate);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.houses__nextpages__buttons button:nth-child(1) {
+    border-radius: 100px;
+    background-color: var(--corporate);
+    color: white;
+}
+
+.houses__nextpages__buttons button img {
+    height: 14px;
+    width: 14px;
+}
+
+.houses__nextpages__fees {
+    margin: 50px 0 0 0;
+    color: var(--grey-text-light);
+    font-size: 10px;
+    text-align: center;
+}
+
+.houses__price {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.houses__price__night {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.houses__price__night span {
+    font-weight: 100;
+    color: var(--grey-text-dark)
+}
+
+.houses__price__total {
+    font-size: 14px;
+    color: var(--grey-text-light);
+    text-decoration: underline;
+    margin-top: 2px;
+}
+
+.houses__ratings {
+    display: flex;
+    margin-top: auto;
+}
+
+.houses__ratings span span {
+    color: var(--grey-text-light);
+}
+
+.houses__ratings img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.houses__specifications {
+    padding-top: 15px;
+}
+
+.houses__specifications span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.houses__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.houses__title__icon button {
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+}
+
+.houses__title__icon button:after {
+    position: absolute;
+    opacity: 0;
+    background: var(--grey-light);
+    content: '';
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.houses__title__icon button:hover:after {
+    opacity: 1;
+}
+
+.logo img {
+    height: 32px;
+    width: 102px;
+}
+
+.main {
+    min-height: calc(100vh - 80vh);
+    width: 840px;
+    padding: 60px 24px 0;
+}
+
+.main h1 {
+    padding: 15px 0 20px 0;
+    font-size: 34px;
+    line-height: 30px;
+}
+
+.main span {
+    background: transparent;
+}
+
+.map__googleMap {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.map {
+    background-color: white;
+    /*Porque el tamaño de la columna de la izquierda es 840px*/
+    width: calc(100% - 840px);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.main__filters {
+    padding-top: 15px;
+}
+
+.main__filters button {
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.searchBar {
+    display: inline-flex;
+    border-radius: 24px;
+    overflow: hidden;
+    align-items: center;
+    border: 1px solid var(--grey-med);
+    margin-left: 150px;
+}
+
+.searchBar__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    background: var(--corporate);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.searchBar__icon img {
+    width: 12px;
+    height: 12px;
+}
+
+.searchBar>button:nth-child(1),
+.searchBar>button:nth-child(3) {
+    font-weight: 900;
+}
+
+.searchBar>button:nth-child(5) {
+    color: var(--grey-text-light);
+}
+
+.separator {
+    width: 32px;
+    height: 1px;
+    background: var(--grey-med);
+}
+
+.specifications {
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--grey-text-light);
+}
